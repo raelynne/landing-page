@@ -1,0 +1,152 @@
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container {
+    margin: auto;
+}
+
+.wrapper {
+    display: inline-block;
+    width: 23%;
+    background-color: white;
+    vertical-align: top;
+    margin: 25px .5%;
+    text-align: left;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 580px;
+    position: relative;
+}
+
+.wrapper h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.wrapper h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 40px auto 30px auto;
+}
+
+.wrapper h2:before {
+    content: '$';
+}
+
+.wrapper h2:after {
+    content: ' / month';
+    font-size: 18px;
+    font-weight: 400;
+    vertical-align: bottom;
+}
+
+.wrapper p {
+    color: #666;
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+    border-bottom: 1px dashed grey;
+}
+
+.wrapper li {
+    width: 100%;
+    margin: 20px auto;
+    line-height: 24px;
+}
+
+.wrapper li:first-child {
+    font-weight: 700;
+}
+
+.wrapper li:before {
+    content: '\f00c';
+    font-family: FontAwesome;
+    display: inline-block;
+    color: yellowgreen;
+    margin-right: 15px;
+}
+
+button {
+    border: none;
+    border-radius: 60px;
+    background-color: indianred;
+    font-size: 20px;
+    font-weight: 700;
+    height: 50px;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 7%;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    background-color: darkred;
+    transition: .5s;
+}
+
+
+@media (min-width: 1200px) {
+    
+    .container {
+    background-image: url('../img/yosemite-4166x2343-5k-4k-wallpaper-forest-osx-apple-lake-stones-water-185.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    }
+}
+
+@media (max-width: 1199px) {
+    
+    .container {
+        background-color: ghostwhite;
+    }
+    
+    .wrapper {
+        width: 35%;
+        box-shadow: 0 0 10px silver;
+        overflow: hidden;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    
+    .wrapper {
+        width: 60%;
+        height: 560px;
+    }
+    
+    button {
+        bottom: 5%;
+    }
+    
+}
+
+@media (max-width: 575px) {
+    
+    .wrapper {
+        width: 80%;
+        padding: 20px;
+    }
+}
