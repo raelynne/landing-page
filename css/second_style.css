@@ -1,0 +1,187 @@
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container {
+    margin: auto;
+}
+
+.wrapper {
+    display: inline-block;
+    width: 27%;
+    background-color: white;
+    vertical-align: top;
+    margin: 25px 1%;
+    text-align: left;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 550px;
+    position: relative;
+    box-shadow: 0 0 10px silver;
+}
+
+.wrapper h3 {
+    color: #74a534;
+    font-size: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.wrapper h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 30px auto;
+    box-sizing: border-box;
+    width: 30%;
+    float: left;
+    position: relative;
+        text-align: center;
+}
+
+.wrapper h2:before {
+    content: '$';
+    font-size: 22px;
+    font-weight: 300;
+    vertical-align: top;
+}
+
+h2:after {
+    content: 'Month';
+    font-size: 12px;
+    color: #888;
+    display: block;
+    padding-left: 10px;
+}
+
+.wrapper p {
+    width: 70%;
+    margin: 25px auto;
+    float: right;
+    line-height: 22px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: #888;
+}
+
+.wrapper li {
+    width: 100%;
+    margin: 20px auto;
+    line-height: 26px;
+    text-transform: capitalize;
+}
+
+.wrapper li:first-child {
+    margin-top: 0;
+    padding-top: 25px;
+    border-top: 1px solid lightgrey;
+}
+
+.middle li:first-child {
+    margin-top: 0;
+    padding-top: 25px;
+    border-top: 1px solid white;
+}
+
+.wrapper li:last-child {
+    margin-bottom: 25px;
+}
+
+.wrapper li:before {
+    content: '\f00c';
+    font-family: FontAwesome;
+    display: inline-block;
+    color: #74a534;
+    margin-right: 15px;
+}
+
+.middle {
+    color: white;
+    background-color: #74a534;
+}
+
+.middle h3 {
+    color: white;
+    padding-bottom: 25px;
+    border-bottom: 1px solid white;
+}
+
+.middle li:before {
+    color: white;
+}
+
+.middle h2:after {
+    color: white;
+}
+
+.middle p {
+    color: white;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    background-color: #222;
+    font-size: 16px;
+    height: 40px;
+    width: 85%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    outline: none;
+    font-weight: 300;
+}
+
+.middle a {
+    color: #222;
+}
+
+.middle button {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    .wrapper {
+        width: 40%;
+    }
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        width: 60%;
+    }
+    
+}
+
+@media (max-width: 575px) {
+    .wrapper {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .wrapper {
+        width: 85%;
+    }
+    
+    button {
+        bottom: 4%;
+    }
+}
